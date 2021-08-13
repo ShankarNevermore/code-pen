@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+.top-pane {
+  background-color: #8ee4af;
+  position: relative;
+}
+
+.pane {
+  height: 50vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background-color: #8ee4af;
+  width: 91%;
+  height: 97%;
+  position: absolute;
+}
+
+.editor-title {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(225, 6%, 13%);
+  color: white;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.CodeMirror {
+  height: 100% !important;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.filename {
+  margin-right: 0.5rem;
+  color: #05386b;
+  display: block;
+}
+
+.link {
+  color: #05386b;
+}
+
+a:hover {
+  color: #3681cc;
+  cursor: pointer;
+}
+
+#html {
+  display: flex;
+  visibility: hidden;
+}
+
+#css {
+  display: flex;
+  visibility: hidden;
+}
+
+#js {
+  display: flex;
+  visibility: hidden;
+}
+
+#fileHead {
+  margin: 2vh;
+  display: block;
+  border-bottom-style: double;
+}
